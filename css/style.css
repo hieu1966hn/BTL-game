@@ -7,7 +7,7 @@
     background-image: linear-gradient(to right top,rgba(104, 107, 107,0.8) ,rgba(61, 73, 77,0.5) 55%), url("../img/csgo-background.png");
     color: rgb(189, 189, 189);
     
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     /* background-position: center; */
     background-attachment: fixed;
@@ -17,11 +17,14 @@
     display: flex;
     padding-left: 10%;
     white-space: nowrap ;
+    margin-right: 15px;
 }
 .line{
     height: 1px;
     background-color:  red;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    /* margin: 300px 0; */
+
 }
 .red-text{
     color: red;
@@ -43,6 +46,9 @@ header{
 }
 .describe-game-container header .search{
     flex-grow: 1;
+}
+.describe-game-container header .search > button{
+    outline: none;
 }
 button{
     width: 20px;
@@ -87,14 +93,14 @@ button:active{
     /* width: 1144px; */
     width: 80%;
     height: fit-content;
-    /* background-color: #151517; */
-    background-color: #484848;
-    
+    background-color: #29292c;
     margin: auto;
     color: #ffffff;
 }
 .aside-mid .site-url{
     padding: 15px;
+      background-color: #29292c;
+      margin: auto;
     
 }
 .aside-mid .site-url > a::after{
@@ -105,9 +111,11 @@ button:active{
     display: flex;
     flex-direction: column;
     background-color: #151517;
-    padding: 20px;
+    padding: 20px 15px;
+    margin: 0px 15px;
 }
 .describe-game-container .aside-mid .evaluate-game .game-description{
+    height: 60px;
     display: flex;
     /* flex-direction: row;  */
     /* theo hang roi con */
@@ -118,9 +126,16 @@ h1{
 }
 .describe-game-container .aside-mid .evaluate-game .game-description .title-game-vote{
     width: 33.33333%;
+
 }
-img{
+.describe-game-container .aside-mid .evaluate-game .game-description .title-game-vote >img{
     float: left;
+}
+.flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .describe-game-container .aside-mid .evaluate-game .game-description .history{
     display: flex;
@@ -137,12 +152,14 @@ img{
     color: #ffffff;
     background-color: red;
     height: 100%;
-    width: 70px;
+    width: 60px;
     text-align: center;
-    line-height: 60px;
-    font-size: 30px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 900;
 }
 .describe-game-container .aside-mid .evaluate-game .icon-evaluate{
+    margin-top: 10px;
     display: flex;
 }
 .describe-game-container .aside-mid .evaluate-game .icon-evaluate .face-book{
@@ -154,4 +171,50 @@ img{
     background-color: rgb(14, 197, 60);
     width: 100px;
     height: 25px;
+}
+.trailer{
+    width: 100%;
+}
+.red-star > i{
+    color: red;
+}
+#white-star{
+    color: #ffffff;
+}
+.esport-new{
+    color: red;
+    padding: 15px 15px;
+    font-size: 30px;
+}
+.introduce-game{
+    margin-bottom: 30px;
+}
+.sub-list .news{
+    display: flex;
+    background-color: rgb(104, 107, 107);
+    margin: 0px 15px;
+    margin-bottom: 20px;
+}
+.sub-list .news .new-content{
+    margin: 0px 15px;
+}
+.hover-red:hover{
+    color: red;
+}
+
+.hover-scale {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.hover-scale img {
+    max-width: 100%;
+    transition: all 1s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.hover-scale:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
