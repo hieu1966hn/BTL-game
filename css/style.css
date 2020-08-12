@@ -71,7 +71,10 @@ button:active{
     width: fit-content;
     outline: none;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;
 }
 .describe-game-container header .header-info .login{
     position: absolute;
@@ -128,6 +131,7 @@ img{
     width: 33.33333%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
 }
 #number{
     color: #ffffff;
@@ -138,7 +142,16 @@ img{
     line-height: 60px;
     font-size: 30px;
 }
+.describe-game-container .aside-mid .evaluate-game .icon-evaluate{
+    display: flex;
+}
 .describe-game-container .aside-mid .evaluate-game .icon-evaluate .face-book{
     background-color: blue;
     width: 100px;
+    height: 25px;
+}
+.describe-game-container .aside-mid .evaluate-game .icon-evaluate .down-load{
+    background-color: rgb(14, 197, 60);
+    width: 100px;
+    height: 25px;
 }
